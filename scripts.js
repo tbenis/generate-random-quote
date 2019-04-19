@@ -4,7 +4,7 @@ function pickRandomQuote(){
 function generateQuote(){
     var selectdQ = pickRandomQuote();
     for (var i = 0; i < quotes.length; i++) {
-        document.getElementById('quote').innerHTML = quotes[selectdQ].quote;
+        document.getElementById('quote').innerHTML = "&ldquo;"+ quotes[selectdQ].quote +"&rdquo;";
         document.getElementById('author').innerHTML = "- " + quotes[selectdQ].author;
     }
 }
